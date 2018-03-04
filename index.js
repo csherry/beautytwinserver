@@ -2,7 +2,7 @@ var express = require('express');
 const {OperationHelper} = require('apac');
 
 var app = express();
-var port = 10001;
+var port = porcess.env.PORT || 10007;
 
 app.use((req,resp,next)=>{
     resp.setHeader("Access-Control-Allow-Origin","*");
